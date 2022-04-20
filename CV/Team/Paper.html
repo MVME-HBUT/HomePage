@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)file:///E:/00%E6%A1%8C%E9%9D%A2%E6%96%87%E4%BB%B6/CVTeam.html -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>视觉组论文</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <!--[if lte IE 8]>
+  <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+  <link rel="stylesheet" href="./CVTeam_files/main.css">
+  <link rel="stylesheet" href="./CVTeam_files/bootstrap.min.css" >
+  <link rel="stylesheet" href="./CVTeam_files/semantic.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="./CVTeam_files/index.css" media="screen" title="no title" charset="utf-8">
+  <link rel="shortcut icon" href="file:///E:/00%E6%A1%8C%E9%9D%A2%E6%96%87%E4%BB%B6/oh-bear.github.io-master/images/bitbug_favicon.ico">
+  <!--[if lte IE 9]>
+  <link rel="stylesheet" href="assets/css/ie9.css"/><![endif]-->
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
+  <style>
+    button {
+      font-size: 18px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      display: inline-block;
+      text-align: center;
+      font-weight: bold;
+      padding: 0.7em 2em;
+      border: 3px solid #FF0072;
+      border-radius: 2px;
+      position: relative;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+      color: #FF0072;
+      text-decoration: none;
+      transition: 0.3s ease all;
+      z-index: 1;
+      }
+
+      button:before {
+      transition: 0.5s all ease;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      right: 50%;
+      bottom: 0; 
+      opacity: 0;
+      content: '';
+      background-color: #FF0072;
+      z-index: -1;
+      }
+
+      button:hover, button:focus {
+      color: white;
+      }
+
+      button:hover:before, button:focus:before {
+      transition: 0.5s all ease;
+      left: 0;
+      right: 0;
+      opacity: 1;
+      }
+
+      button:active {
+      transform: scale(0.9);
+      }
+    .avatar {
+      width: 6em;
+      height: 6em;
+      border-radius: 6em;
+    }
+    .jx{
+      border-bottom: 2px solid rgb(41, 41, 37);
+    }
+    h3 img {
+      height: 1em;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="inner">
+    <div class="ui red basic segment  topmenu">
+      <div class="ui borderless menu container" style="border:0;box-shadow:none;">
+          <div class="header item" style="margin-right:10px;">
+            <div class="ui image">
+              <img src="./CVTeam_files/log.png" alt="">
+            </div>
+          </div>
+          <div class="item" style="margin-right:10px;">
+            <a href="https://hbut-cv.github.io/index.html#">首页</a>
+          </div>
+          <div class="item" style="margin-right:10px;">
+            <a href="https://hbut-cv.github.io/CV/Team/CVTeam.html#">成员</a>
+          </div>
+          <div class="item" style="margin-right:10px;">
+            <a href="https://hbut-cv.github.io/CV/setmeal.html#">项目</a>
+          </div>    
+          <div class="item" style="margin-right:10px;">
+            <a href="https://hbut-cv.github.io/CV/Team/Paper.html#">论文</a>
+          </div>
+          <div class="item" style="margin-right:10px;">
+            <a href="file:///E:/00%E6%A1%8C%E9%9D%A2%E6%96%87%E4%BB%B6/CV/index.html#">演示</a>
+          </div>        
+      </div>
+  </div>
+
+  <section id="banner" style="margin-top: -60px;">
+    <div class="container" id="damu-tab">
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-info"><a href="#home">期刊论文</a></button>
+        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="caret"></span>
+          <span class="sr-only">期刊论文</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#1">检测</a></li>
+          <li><a href="#2">分割</a></li>
+          <li><a href="#3">诊断</a></li>
+          <li><a href="#4">匹配</a></li>
+          <li><a href="#5">其他</a></li>
+        </ul>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-info"><a href="#huiyi">CCF会议论文</a></button>
+        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="caret"></span>
+          <span class="sr-only">CCF会议论文</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#">检测</a></li>
+          <li><a href="#">分割</a></li>
+          <li><a href="#">诊断</a></li>
+          <li><a href="#">匹配</a></li>
+          <li><a href="#">其他</a></li>
+        </ul>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-default" style="background-color:#33ccff;border: none"><a href="#xuewei">学位论文</a></button>
+        </button>
+      </div>
+
+      <br>
+      <!-- <ul class="nav nav-pills">
+        <li role="presentation" class="active"><a href="#2021">2021</a></li>
+        <li role="presentation"><a href="#2020">2020</a></li>
+        <li role="presentation"><a href="#2019">2019</a></li>
+        <li role="presentation"><a href="#2018">2018</a></li>
+        <li role="presentation"><a href="#2017">2017</a></li>
+        <li role="presentation"><a href="#2016">2016</a></li>
+        <li role="presentation"><a href="#2015">2015</a></li>
+        <li role="presentation"><a href="#2014">2014</a></li>
+        <li role="presentation"><a href="#2013">2013</a></li>
+      </ul> -->
+      <br>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div id="home">
+          <br><div class="label label-warning">期刊论文</div><br><br><div class="jx"></div><br>
+            
+          <ul>
+          <br><div id="1" class="label label-warning">检测</div><br><br><div class="jx"></div><br>
+          <li><p class="MsoNormal" style="margin-left:0.0pt;text-indent:-8.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">Yang Zhang, Moyun Liu,
+          Yang Yang, Yanwen Guo, Huiming Zhang. A Unified Light Framework for Real-time
+          Fault Detection of Freight Train Images. IEEE Transactions on Industrial
+          Informatics. 2021. (SCI, IF=9.112)</span>   <a href="https://arxiv.org/pdf/2102.00381.pdf" target="_blank">【Paper】</a></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:0.0pt;text-indent:-8.0pt;line-height:
+            150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">Yang Zhang, Moyun Liu,
+          Yunian Chen, Hongjie Zhang, Yanwen Guo. Real-time Vision Based System of Fault
+          Detection for Freight Trains. IEEE Transactions on Instrumentation and
+          Measurement. 2020, 69(7): 5274-5284. (SCI, IF=3.658)</span>   <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=8911418" target="_blank">【Paper】</a></p></li>
+        
+          <li><p class="MsoNormal" style="margin-left:0.0pt;text-indent:-8.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">Sun G, Zhou Z, Y Gao, et
+          al. A Fast Fabric Defect Detection Framework for Multi-Layer Convolutional
+          Neural Network Based on Histogram Back-Projection[J]. IEICE Transactions on
+          Information and Systems, 2019, E102–D(12):2504-2514. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">（</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">SCI, IF:1.40</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">）</span>   <a href="https://www.jstage.jst.go.jp/article/transinf/E102.D/12/E102.D_2019EDP7092/_pdf" target="_blank">【Paper】</a></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:0.0pt;text-indent:-8.0pt;line-height:
+            150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">Guodong Sun, Yang Zhang,
+          Hanbing Tang, Huiming Zhang, Moyun Liu and Daxing Zhao. Railway equipment
+          detection using exact height function shape descriptor based on fast adaptive
+          Markov random field. Optical Engineering, 2018, 57(5): 053114 (SCI, IF=1.082)</span>   <a href="https://www.researchgate.net/profile/Guodong-Sun/publication/325371191_Railway_equipment_detection_using_exact_height_function_shape_descriptor_based_on_fast_adaptive_Markov_random_field/links/5b571d9faca27217ffb7c49a/Railway-equipment-detection-using-exact-height-function-shape-descriptor-based-on-fast-adaptive-Markov-random-field.pdf" target="_blank">【Paper】</a></p></li>
+
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">孙国栋</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">, </span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">林凯</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">, </span><span style="font-size:12.0pt;line-height:
+          150%;font-family:宋体">高媛</span><span lang="EN-US" style="font-size:12.0pt;
+          line-height:150%">, </span><span style="font-size:12.0pt;line-height:150%;
+          font-family:宋体">张杨</span><span lang="EN-US" style="font-size:12.0pt;line-height:
+          150%">, </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">赵大兴</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">快速特征金字塔和</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">Soft-Cascade</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">在折角塞门图像故障检测中的应用</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">机械科学与技术</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">, 2019, 38(6): 947-952. (CSCD</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">核心</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">)</span></p></li>
+           
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">孙国栋</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,</span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">林松</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">,</span><span style="font-size:12.0pt;line-height:
+          150%;font-family:宋体">艾成汉</span><span lang="EN-US" style="font-size:12.0pt;
+          line-height:150%">,</span><span style="font-size:12.0pt;line-height:150%;
+          font-family:宋体">赵大兴</span><span lang="EN-US" style="font-size:12.0pt;line-height:
+          150%">.</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">基于灰度共生矩阵与反向投影的织物疵点检测</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">[J].</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">计算机测量与控制</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,2016,(07):65-67. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">（</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">11</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">版核心）</span></p></li>
+            
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">孙国栋</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,</span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">杨林杰</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">,</span><span style="font-size:12.0pt;line-height:
+          150%;font-family:宋体">张杨</span><span lang="EN-US" style="font-size:12.0pt;
+          line-height:150%">.</span><span style="font-size:12.0pt;line-height:150%;
+          font-family:宋体">一种</span><span lang="EN-US" style="font-size:12.0pt;line-height:
+          150%">FPC</span><span style="font-size:12.0pt;line-height:150%;font-family:
+          宋体">缺陷视觉检测方法</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">[J].</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">自动化仪表</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,2015,(12):16-18. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">（</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">11</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">版核心）</span></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">孙国栋</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,</span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">张杨</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">.FPC</span><span style="font-size:12.0pt;line-height:
+          150%;font-family:宋体">补强片贴片质量视觉检测系统设计</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">[J].</span><span style="font-size:12.0pt;line-height:
+          150%;font-family:宋体">应用光学</span><span lang="EN-US" style="font-size:12.0pt;
+          line-height:150%">,2015,(06):942-947. </span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">（</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">CSCD</span><span style="font-size:12.0pt;line-height:
+          150%;font-family:宋体">核心）</span></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">赵大兴</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,</span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">原振方</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">,</span><span style="font-size:12.0pt;line-height:
+          150%;font-family:宋体">王博</span><span lang="EN-US" style="font-size:12.0pt;
+          line-height:150%">. </span><span style="font-size:12.0pt;line-height:150%;
+          font-family:宋体">基于机器视觉</span><span lang="EN-US" style="font-size:12.0pt;
+          line-height:150%">FPC</span><span style="font-size:12.0pt;line-height:150%;
+          font-family:宋体">缺陷检测对位系统研究</span><span lang="EN-US" style="font-size:12.0pt;
+          line-height:150%">[J]. </span><span style="font-size:12.0pt;line-height:150%;
+          font-family:宋体">制造业自动化</span><span lang="EN-US" style="font-size:12.0pt;
+          line-height:150%">,2015,(23):32-34. </span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">（</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">11</span><span style="font-size:12.0pt;line-height:
+          150%;font-family:宋体">版核心）</span></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">余海涛</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,</span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">孙国栋</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">,</span><span style="font-size:12.0pt;line-height:
+          150%;font-family:宋体">梁永强</span><span lang="EN-US" style="font-size:12.0pt;
+          line-height:150%">,</span><span style="font-size:12.0pt;line-height:150%;
+          font-family:宋体">郭睿文</span><span lang="EN-US" style="font-size:12.0pt;line-height:
+          150%">.</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">粘扣带视觉检测的恒线速度传动设计</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">[J].</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">机床与液压</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,2015,(20):150-152. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">（核心）</span></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">孙国栋</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,</span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">杨林杰</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">,</span><span style="font-size:12.0pt;line-height:
+          150%;font-family:宋体">张杨</span><span lang="EN-US" style="font-size:12.0pt;
+          line-height:150%">,</span><span style="font-size:12.0pt;line-height:150%;
+          font-family:宋体">赵大兴</span><span lang="EN-US" style="font-size:12.0pt;line-height:
+          150%">.</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">一种汽车锁扣铆点的视觉检测方法</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">[J].</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">计算机测量与控制</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,2015,(08):2769-2772. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">（</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">11</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">版核心）</span></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">孙国栋</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,</span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">张杨</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">,</span><span style="font-size:12.0pt;line-height:
+          150%;font-family:宋体">李萍</span><span lang="EN-US" style="font-size:12.0pt;
+          line-height:150%">,</span><span style="font-size:12.0pt;line-height:150%;
+          font-family:宋体">胡倩</span><span lang="EN-US" style="font-size:12.0pt;line-height:
+          150%">.</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">电子接插件视觉检测系统设计与误差分析</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">[J].</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">仪表技术与传感器</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,2015,(08):104-106+110. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">（</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">CSCD</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">扩展）</span></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"<span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">张杨</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,</span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">孙国栋</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">,</span><span style="font-size:12.0pt;line-height:
+          150%;font-family:宋体">梁永强</span><span lang="EN-US" style="font-size:12.0pt;
+          line-height:150%">,</span><span style="font-size:12.0pt;line-height:150%;
+          font-family:宋体">李萍</span><span lang="EN-US" style="font-size:12.0pt;line-height:
+          150%">,</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">胡倩</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">.</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">电子插接件视觉检测中次品自动剔除装置设计</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">[J].</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">制造业自动化</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,2014,(21):118-121. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">（</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">11</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">版核心）</span></p></li>
+            
+          <br><div id="2" class="label label-warning">分割</div><br><br><div class="jx"></div><br>
+          <li><p class="MsoNormal" style="margin-left:0.0pt;text-indent:-8.0pt;line-height:
+            150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">Yang Zhang, Moyun Liu,
+          Jingwu He, Fei Pan, Yanwen Guo. Affinity Fusion Graph-based Framework for
+          Natural Image Segmentation. IEEE Transactions on Multimedia. 2021. (SCI,
+          IF=6.051)</span>   <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=9334427" target="_blank">【Paper】</a></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:0.0pt;text-indent:-8.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">Guodong Sun, Kai Lin,
+          Junhao Wang, Yang Zhang. An Enhanced Affinity Graph for Image Segmentation.
+          IEICE Transactions on Information and Systems, 2019, E102-D(5): 1073-1080. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">（</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">SCI, IF:1.40</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">）</span>   <a href="https://www.jstage.jst.go.jp/article/transinf/E102.D/5/E102.D_2018EDP7322/_pdf" target="_blank">【Paper】</a></p></li>
+            
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">孙国栋</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">, </span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">林凯</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">, </span><span style="font-size:12.0pt;line-height:
+          150%;font-family:宋体">高媛</span><span lang="EN-US" style="font-size:12.0pt;
+          line-height:150%">, </span><span style="font-size:12.0pt;line-height:150%;
+          font-family:宋体">等</span><span lang="EN-US" style="font-size:12.0pt;line-height:
+          150%">. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">基于改进亲和度图的矿石颗粒图像分割研究与实现</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">仪表技术与传感器</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">. (CSCD</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">扩展</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">)</span></p></li>
+            
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">孙国栋</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,</span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">林松</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">,</span><span style="font-size:12.0pt;line-height:
+          150%;font-family:宋体">艾成汉</span><span lang="EN-US" style="font-size:12.0pt;
+          line-height:150%">,</span><span style="font-size:12.0pt;line-height:150%;
+          font-family:宋体">赵大兴</span><span lang="EN-US" style="font-size:12.0pt;line-height:
+          150%">.</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">基于灰度直方图反向投影的织物疵点图像分割</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">[J].</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">制造业自动化</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,2016,(04):20-21. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">（</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">11</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">版核心）</span></p></li>
+            
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">孙国栋</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,</span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">卢婷</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">,</span><span style="font-size:12.0pt;line-height:
+          150%;font-family:宋体">戚雨航</span><span lang="EN-US" style="font-size:12.0pt;
+          line-height:150%">.</span><span style="font-size:12.0pt;line-height:150%;
+          font-family:宋体">基于几何特征匹配的截断塞门手把图像分割</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">[J].</span><span style="font-size:12.0pt;line-height:
+          150%;font-family:宋体">制造业自动化</span><span lang="EN-US" style="font-size:12.0pt;
+          line-height:150%">,2013,(05):46-47. </span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">（</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">11</span><span style="font-size:12.0pt;line-height:
+          150%;font-family:宋体">版核心）</span></p></li>
+          
+          <br><div id="3" class="label label-warning">诊断</div><br><br><div class="jx"></div><br>
+          <li><p class="MsoNormal" style="margin-left:0.0pt;text-indent:-8.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">Sun G, Gao Y, Xu Y, et al.
+          Data-Driven Fault Diagnosis Method Based on Second-Order Time-Reassigned
+          Multisynchrosqueezing Transform and Evenly Mini-Batch Training[J]. IEEE Access,
+          2020, 8:</span><span lang="EN-US"> </span><span lang="EN-US" style="font-size:12.0pt;
+          line-height:150%">120859-120869. </span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">（</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">SCI, IF:3.90</span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">）</span>   <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=9130692" target="_blank">【Paper】</a></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:0.0pt;text-indent:-8.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">Sun G, Gao Y, Lin K, et
+          al. Fine-grained fault diagnosis method of rolling bearing combining
+          multisynchrosqueezing transform and sparse feature coding based on dictionary
+          learning[J]. Shock and Vibration, 2019. </span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">（</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">SCI, IF:2.40</span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">）</span>   <a href="https://downloads.hindawi.com/journals/sv/2019/1531079.pdf" target="_blank">【Paper】</a></p></li>
+            
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">孙国栋</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">, </span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">王俊豪</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">, </span><span style="font-size:12.0pt;line-height:
+          150%;font-family:宋体">徐昀</span><span lang="EN-US" style="font-size:12.0pt;
+          line-height:150%">, </span><span style="font-size:12.0pt;line-height:150%;
+          font-family:宋体">林凯</span><span lang="EN-US" style="font-size:12.0pt;line-height:
+          150%">, </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">等</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">. CEEMD-WVD</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">多尺度时频图像的滚动轴承故障诊断</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">[J]. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">机械科学与技术</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">, 2020, 39(5):</span><span lang="EN-US"> </span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">688-694.</span><span lang="EN-US"> </span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">(CSCD</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">核心</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">)</span></p></li>            
+
+          <br><div id="4" class="label label-warning">匹配</div><br><br><div class="jx"></div><br>
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">赵大兴</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,</span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">王博</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">,</span><span style="font-size:12.0pt;line-height:
+          150%;font-family:宋体">周唯倜</span><span lang="EN-US" style="font-size:12.0pt;
+          line-height:150%">,</span><span style="font-size:12.0pt;line-height:150%;
+          font-family:宋体">孙国栋</span><span lang="EN-US" style="font-size:12.0pt;line-height:
+          150%">.</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">基于有向线段重构轮廓与成对几何直方图的缓解阀盖图像匹配算法</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">[J].</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">中国机械工程</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,2017,(06):721-727. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">（</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">CSCD</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">核心）</span></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">孙国栋</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,</span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">张杨</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">,</span><span style="font-size:12.0pt;line-height:
+          150%;font-family:宋体">李萍</span><span lang="EN-US" style="font-size:12.0pt;
+          line-height:150%">,</span><span style="font-size:12.0pt;line-height:150%;
+          font-family:宋体">梅术正</span><span lang="EN-US" style="font-size:12.0pt;line-height:
+          150%">,</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">赵大兴</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">.</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">用于快速形状匹配的精确型高度函数特征描述</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">[J].</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">光学精密工程</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,2017,(01):224-235. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">（</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">EI</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">）</span></p></li>
+            
+          <p class="MsoNormal" style="margin-left:5pt;line-height:150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%">SUN Guo-dong, ZHANG Yang, LI
+          Ping, et all. Feature description of exact height function used in fast shape
+          retrieval[J]. Optics and Precision Engineering, 2017, 25(1): 224-235.</span></p>
+          
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">孙国栋</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,</span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">杨林杰</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">,</span><span style="font-size:12.0pt;line-height:
+          150%;font-family:宋体">梅术正</span><span lang="EN-US" style="font-size:12.0pt;
+          line-height:150%">,</span><span style="font-size:12.0pt;line-height:150%;
+          font-family:宋体">赵大兴</span><span lang="EN-US" style="font-size:12.0pt;line-height:
+          150%">.</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">一种基于几何特征的列车集尘器形状匹配算法</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">[J].</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">中国机械工程</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,2016,(02):230-234. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">（</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">CSCD</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">核心）</span></p></li>
+            
+          <br><div id="5" class="label label-warning">其他</div><br><br><div class="jx"></div><br>
+          <li><p class="MsoNormal" style="margin-left:0.0pt;text-indent:-8.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">Bo Wu, Songlin Feng,
+          Guodong Sun, Liang Xu, Chenghan Ai. Identification Method of Shaft Orbit in
+          Rotating Machines Based on Accurate Fourier Height Functions Descriptors. Shock
+          and Vibration, 2018, 1-10. (SCI, IF:2.40) </span>   <a href="https://downloads.hindawi.com/journals/sv/2018/3737250.pdf" target="_blank">【Paper】</a></p></li>
+            
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">孙国栋</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">, </span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">江亚杰</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">, </span><span style="font-size:12.0pt;line-height:
+          150%;font-family:宋体">徐亮</span><span lang="EN-US" style="font-size:12.0pt;
+          line-height:150%">,</span><span style="font-size:12.0pt;line-height:150%;
+          font-family:宋体">等</span><span lang="EN-US" style="font-size:12.0pt;line-height:
+          150%">. BP</span><span style="font-size:12.0pt;line-height:150%;font-family:
+          宋体">网络预测阈值的仪表重影字符识别方法研究</span><span lang="EN-US" style="font-size:12.0pt;
+          line-height:150%">.</span><span lang="EN-US"> </span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">郑州大学学报</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">(</span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">工学版</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">), 2020,41(04):28-33. (</span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">北大核心</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">)</span></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt"><span lang="EN-US" style="font-size:12.0pt"><span style="font:7.0pt &quot;Times New Roman&quot;">
+          </span></span><span style="font-size:12.0pt;font-family:宋体">孙国栋</span><span lang="EN-US" style="font-size:12.0pt">, </span><span style="font-size:12.0pt;
+          font-family:宋体">徐昀</span><span lang="EN-US" style="font-size:12.0pt">, </span><span style="font-size:12.0pt;font-family:宋体">徐亮</span><span lang="EN-US" style="font-size:12.0pt">,</span><span style="font-size:12.0pt;font-family:
+          宋体">等</span><span lang="EN-US" style="font-size:12.0pt">. </span><span style="font-size:12.0pt;font-family:宋体">不均匀光照和重影的仪表图像二值化方法</span><span lang="EN-US" style="font-size:12.0pt">[J]. </span><span style="font-size:12.0pt;
+          font-family:宋体">应用光学</span><span lang="EN-US" style="font-size:12.0pt">, 2020,
+          41(1): 74-78.</span><span lang="EN-US"> </span><span lang="EN-US" style="font-size:
+          12.0pt">(CSCD</span><span style="font-size:12.0pt;font-family:宋体">核心</span><span lang="EN-US" style="font-size:12.0pt">)</span></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">孙国栋，徐亮</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">. </span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">基于精确型傅里叶高度函数描述子的服装款式识别方法</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">中国测试（</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">17</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">版核心）</span></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">孙国栋</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">, </span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">徐亮</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">, </span><span style="font-size:12.0pt;line-height:
+          150%;font-family:宋体">徐昀</span><span lang="EN-US" style="font-size:12.0pt;
+          line-height:150%">, </span><span style="font-size:12.0pt;line-height:150%;
+          font-family:宋体">高媛</span><span lang="EN-US" style="font-size:12.0pt;line-height:
+          150%">. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">融合</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">EHF-TCDs</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">与</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">SVM</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">的旋转机械轴心轨迹识别方法</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">机械科学与技术</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%"> (CSCD</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">核心</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">)</span></p></li>
+            
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">孙国栋</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">, </span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">周振</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">, </span><span style="font-size:12.0pt;line-height:
+          150%;font-family:宋体">王俊豪</span><span lang="EN-US" style="font-size:12.0pt;
+          line-height:150%">, </span><span style="font-size:12.0pt;line-height:150%;
+          font-family:宋体">张杨</span><span lang="EN-US" style="font-size:12.0pt;line-height:
+          150%">, </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">赵大兴</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">基于稀疏编码空间金字塔匹配和</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">GA-SVM</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">的列车故障自动识别</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">光学精密工程</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">, 2018, 26(12), 3087-3098.</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">（</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">EI</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">收录）</span></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">孙国栋</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">, </span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">汤汉兵</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">, </span><span style="font-size:12.0pt;line-height:
+          150%;font-family:宋体">林凯</span><span lang="EN-US" style="font-size:12.0pt;
+          line-height:150%">,</span><span style="font-size:12.0pt;line-height:150%;
+          font-family:宋体">等</span><span lang="EN-US" style="font-size:12.0pt;line-height:
+          150%">. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">基于多特征融合和</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">BP-AdaBoost</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">算法的列车关键零件故障自动识别</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">[J]. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">中国机械工程</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">, 2017, 28(21):2588-2594.</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">（</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">CSCD</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">核心）</span></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">孙国栋，梅术正，汤汉兵，周振</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">. </span><a name="OLE_LINK2"></a><span style="font-size:12.0pt;line-height:150%;font-family:宋体">基于密度特征与</span><span lang="EN-US" style="font-size:12.0pt;line-height:
+          150%">KNN</span><span style="font-size:12.0pt;line-height:150%;font-family:
+          宋体">算法的最优特征维数选择</span><span lang="EN-US" style="font-size:12.0pt;line-height:
+          150%">[J].</span><span style="font-size:12.0pt;line-height:150%;font-family:
+          宋体">（</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">14</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">版核心）</span></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">孙国栋</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">, </span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">艾成汉</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">, </span><span style="font-size:12.0pt;line-height:
+          150%;font-family:宋体">周振</span><span lang="EN-US" style="font-size:12.0pt;
+          line-height:150%">,</span><span style="font-size:12.0pt;line-height:150%;
+          font-family:宋体">等</span><span lang="EN-US" style="font-size:12.0pt;line-height:
+          150%">. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">基于高度函数的旋转机械轴心轨迹识别方法</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">[J]. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">中国测试</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">, 2017, 43(9):118-122. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">（</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">14</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">版核心）</span></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">孙国栋</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,</span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">杨林杰</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">,</span><span style="font-size:12.0pt;line-height:
+          150%;font-family:宋体">张杨</span><span lang="EN-US" style="font-size:12.0pt;
+          line-height:150%">.</span><span style="font-size:12.0pt;line-height:150%;
+          font-family:宋体">基于三点迭代的聚类圆拟合算法</span><span lang="EN-US" style="font-size:12.0pt;
+          line-height:150%">[J].</span><span style="font-size:12.0pt;line-height:150%;
+          font-family:宋体">制造业自动化</span><span lang="EN-US" style="font-size:12.0pt;
+          line-height:150%">,2015,(13):76-78. </span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">（</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">11</span><span style="font-size:12.0pt;line-height:
+          150%;font-family:宋体">版核心）</span></p></li>
+           
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">孙国栋</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,</span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">徐威</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">,</span><span style="font-size:12.0pt;line-height:
+          150%;font-family:宋体">梁永强</span><span lang="EN-US" style="font-size:12.0pt;
+          line-height:150%">,</span><span style="font-size:12.0pt;line-height:150%;
+          font-family:宋体">赵大兴</span><span lang="EN-US" style="font-size:12.0pt;line-height:
+          150%">.</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">基于形状上下文的列车挡键丢失图像识别算法</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">[J].</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">铁道科学与工程学报</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,2014,(06):127-131. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">（</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">CSCD</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">核心）</span></p></li>
+           
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">孙国栋</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,</span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">徐威</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">,</span><span style="font-size:12.0pt;line-height:
+          150%;font-family:宋体">宋丽萍</span><span lang="EN-US" style="font-size:12.0pt;
+          line-height:150%">.</span><span style="font-size:12.0pt;line-height:150%;
+          font-family:宋体">基于视觉伺服的羊毛衫自动对边方法研究</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">[J].</span><span style="font-size:12.0pt;line-height:
+          150%;font-family:宋体">毛纺科技</span><span lang="EN-US" style="font-size:12.0pt;
+          line-height:150%">,2014,(02):51-53. </span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">（</span><span lang="EN-US" style="font-size:
+          12.0pt;line-height:150%">11</span><span style="font-size:12.0pt;line-height:
+          150%;font-family:宋体">版核心）</span></p></li>
+           
+           
+
+
+          <!-- <br><div id="2021" class="label label-warning">2021</div><br><br><div class="jx"></div><br>
+ 
+          <br><div id="2020" class="label label-warning">2020</div><br><br><div class="jx"></div><br>
+    
+          <br><div id="2019" class="label label-warning">2019</div><br><br><div class="jx"></div><br>
+
+          <br><div id="2018" class="label label-warning">2018</div><br><br><div class="jx"></div><br>
+
+          <br><div id="2017" class="label label-warning">2017</div><br><br><div class="jx"></div><br>
+
+          <br><div id="2016" class="label label-warning">2016</div><br><br><div class="jx"></div><br>
+       
+          <br><div id="2015" class="label label-warning">2015</div><br><br><div class="jx"></div><br>
+
+          <br><div id="2014" class="label label-warning">2014</div><br><br><div class="jx"></div><br>
+
+          <br><div id="2013" class="label label-warning">2013</div><br><br><div class="jx"></div><br> -->
+
+          </ul>
+        </div>
+          <div id="huiyi">
+
+          <br><div class="label label-warning">CCF会议论文</div><br><br><div class="jx"></div><br>
+          <ul>
+          <li><p class="MsoNormal" style="margin-left:0.0pt;text-indent:-8.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">Yang Zhang, Huiming Zhang, Yanwen
+          Guo, Kai Lin, Jingwu He. An Adaptive Affinity Graph with Subspace Pursuit for
+          Natural Image Segmentation. IEEE International Conference on Multimedia and
+          Expo (ICME), 2019. (CCF-B)</span>   <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=8784904" target="_blank">【Paper】</a></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:0.0pt;text-indent:-8.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">Yang Zhang, Jia Song, Huiming Zhang,
+          Yanwen Guo. Detection of Tiny Surface Defects on Small Ring Parts Using Normal
+          Maps. Pacific-Rim Conference on Multimedia (PCM), 2018. (CCF-C)</span>   <a href="https://link.springer.com/content/pdf/10.1007%2F978-3-030-00776-8.pdf" target="_blank">【Paper】</a></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:0.0pt;text-indent:-8.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">Yang Zhang, Kai Lin, Huiming Zhang,
+          Yanwen Guo and Guodong Sun. A unified framework for fault detection of freight
+          train images under complex environment. Accept by ICIP</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">，</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">2018. (CCF-C)</span>   <a href="https://www.researchgate.net/profile/Guodong-Sun/publication/327994904_A_Unified_Framework_for_Fault_Detection_of_Freight_Train_Images_Under_Complex_Environment/links/5d7382cd299bf1cb808e4fb6/A-Unified-Framework-for-Fault-Detection-of-Freight-Train-Images-Under-Complex-Environment.pdf" target="_blank">【Paper】</a></p></li>
+          </ul>
+          </div>
+        <div id="xuewei">
+          <br><div id="2021" class="label label-warning">学位论文</div><br><br><div class="jx"></div><br>
+          <ul>
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">江亚杰</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">基于深度学习的电力仪表视觉校对系统</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">[D]. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">湖北工业大学</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">, 2020</span></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">徐亮</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">复杂光照条件下含拖影仪表字符识别方法</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">[D]. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">湖北工业大学</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">, 2020</span></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">王俊豪</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">基于改进</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">ORB</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">图像配准与深度学习的</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">PCB</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">裸板缺陷检测</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">[D]. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">湖北工业大学</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">, 2020</span></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">林凯</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">基于时频图像和多层次稀疏编码的旋转机械振动信号细粒度故障识别算法研究</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">[D]. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">湖北工业大学</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">, 2020</span></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">周振</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">基于稀疏编码空间金字塔匹配的低照度列车故障图像增强与识别方法研究</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">[D]. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">湖北工业大学</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">, 2019</span></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">汤汉兵</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">基于快速活动轮廓模型和</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">BP-AdaBoost</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">的织物缺陷检测</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">[D]. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">湖北工业大学</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">, 2019</span></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">梅术正</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">基于改进稀疏表征的二部图模型的碎矿粒度检测</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">[D]. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">湖北工业大学</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">, 2018</span></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">艾成汉</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">基于深度学习的旋转机械轴心轨迹细粒度识别算法研究</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">[D]. </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">湖北工业大学</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">, 2018</span></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">张杨</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">.</span><span lang="EN-US"> </span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">基于改进马尔科夫随机场与精确高度函数的列车故障图像层次特征匹配</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">[D].</span><span style="font-size:12.0pt;line-height:150%;font-family:宋体">湖北工业大学</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,2017.</span></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:28.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">王博</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">. </span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">基于轮廓重构的列车检测图像匹配算法研究</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">[D].</span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">湖北工业大学</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,2017.</span></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:28.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">林松</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">. </span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">基于反向投影的织物疵点检测算法研究</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">[D].</span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">湖北工业大学</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,2016.</span></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:28.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">杨林杰</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">. </span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">基于轮廓特征的目标匹配算法研究</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">[D].</span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">湖北工业大学</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,2016.</span></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:28.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">原振方</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">. </span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">基于机器视觉</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">FPC</span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">缺陷检测系统的研究与应用</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">[D].</span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">湖北工业大学</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,2016.</span></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:28.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">徐威</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">. </span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">基于形状描述子的列车典型故障图像识别算法研究</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">[D].</span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">湖北工业大学</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,2015.</span></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:28.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">冯维</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">. </span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">基于几何模型辅助的</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">TFDS</span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">典型故障图像识别方法研究</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">[D].</span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">湖北工业大学</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,2014.</span></p></li>
+          
+          <li><p class="MsoNormal" style="margin-left:28.0pt;text-indent:-21.0pt;line-height:
+          150%"><span lang="EN-US" style="font-size:12.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">卢婷</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">. </span><span style="font-size:12.0pt;
+          line-height:150%;font-family:宋体">基于几何与形状特征的列车故障图像匹配算法研究</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">[D].</span><span style="font-size:
+          12.0pt;line-height:150%;font-family:宋体">湖北工业大学</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%">,2014.</span></p></li>
+          </ul>
+      </div>
+      </div>   
+    </div>
+
+  </section>
+
+
+<!-- Scripts -->
+<script src="./CVTeam_files/jquery.min.js.下载"></script>
+<script src="./CVTeam_files/skel.min.js.下载"></script>
+<script src="./CVTeam_files/util.js.下载"></script>
+<script src="./CVTeam_files/bootstrap.min.js" ></script>
+<!--[if lte IE 8]>
+<script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="./CVTeam_files/main.js.下载"></script>
+
+</body></html>
